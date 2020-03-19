@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DSLActivity"
+    tools:showIn="@layout/activity_dsl">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                tools:ignore="NestedWeights">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:text="No Kuesioner" />
+
+                <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                    android:id="@+id/editNoKuesioner"
+                    android:layout_width="130dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp"
+                    android:ems="10"
+                    android:hint="XYYZZZ"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <Spinner
+                android:id="@+id/spinJK"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:entries="@array/JenisKelamin"
+                android:maxLength="5"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <Spinner
+                android:id="@+id/spinUsia"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:entries="@array/Usia"
+                android:maxLength="5"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <Spinner
+                android:id="@+id/spinAgama"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:entries="@array/Agama"
+                android:maxLength="5"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+            <Spinner
+                android:id="@+id/spinSuku"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:entries="@array/Suku"
+                android:maxLength="5"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+            <Spinner
+                android:id="@+id/spinPendidikan"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:entries="@array/Pendidikan"
+                android:maxLength="5"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+            <Spinner
+                android:id="@+id/spinPekerjaan"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:entries="@array/Pekerjaan"
+                android:maxLength="5"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+            <Spinner
+                android:id="@+id/spinPengeluaranBln"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:entries="@array/PengeluaranBln"
+                android:maxLength="5"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+            <Spinner
+                android:id="@+id/spinParpolPilihan2014"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:entries="@array/ParpolPilihan2014"
+                android:maxLength="5"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.fortuna.rgpmobile.button.ButtonPlus
+                android:id="@+id/btnSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_round_rect"
+                android:text="Simpan"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

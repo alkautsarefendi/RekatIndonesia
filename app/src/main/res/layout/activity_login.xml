@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.fortuna.rgpmobile.view.CustomTextViewRoboto
+                android:id="@+id/loginTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:text="@string/login_title_page"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageIcon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/rgp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                    android:id="@+id/txtNoHP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:drawableTint="@color/colorBlack"
+                    android:hint="@string/no_hp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    tools:ignore="Autofill,UnusedAttribute" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:passwordToggleEnabled="true">
+
+                <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                    android:id="@+id/txtPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/colorBlack"
+                    android:hint="@string/hint_passsword"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    tools:ignore="UnusedAttribute" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <com.fortuna.rgpmobile.view.CustomTextViewRoboto
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/item_margin"
+                android:layout_marginRight="@dimen/item_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="5dp"
+                android:text="@string/forgot_pass" />
+
+            <com.fortuna.rgpmobile.button.ButtonPlus
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_round_rect"
+                android:text="@string/masuk_login"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        tools:ignore="ObsoleteLayoutParam">
+
+        <com.fortuna.rgpmobile.view.CustomTextViewRoboto
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/login_cr"
+            android:textSize="8sp"
+            tools:ignore="SmallSp" />
+
+        <com.fortuna.rgpmobile.view.CustomTextViewRoboto
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/build_date"
+            android:textSize="8sp"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+</LinearLayout>

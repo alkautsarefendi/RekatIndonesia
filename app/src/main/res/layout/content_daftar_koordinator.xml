@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".relawan.DaftarKoordinatorActivity"
+    tools:showIn="@layout/activity_daftar_koordinator">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_shape"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    tools:ignore="NestedWeights">
+
+                    <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                        android:id="@+id/editNIK"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:ems="10"
+                        android:hint="NIK KTP"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLength="16"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.fortuna.rgpmobile.button.ButtonPlus
+                    android:id="@+id/btnCek"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/btn_round_rect"
+                    android:text="OK"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_shape"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    tools:ignore="NestedWeights">
+
+                    <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                        android:id="@+id/editKodePos"
+                        android:layout_width="130dp"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:ems="10"
+                        android:hint="Kode Pos"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.fortuna.rgpmobile.button.ButtonPlus
+                    android:id="@+id/btnCekKdPos"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/btn_round_rect"
+                    android:text="OK"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    tools:ignore="NestedWeights">
+
+                    <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                        android:id="@+id/editNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:ems="10"
+                        android:hint="Nama"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    tools:ignore="NestedWeights">
+
+                    <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                        android:id="@+id/editAlamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:ems="10"
+                        android:hint="Alamat"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    tools:ignore="NestedWeights">
+
+                    <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                        android:id="@+id/editRT"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:ems="10"
+                        android:hint="RT"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.10"
+                    android:gravity="center"
+                    android:text="/"
+                    android:textSize="25dp"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    tools:ignore="NestedWeights">
+
+                    <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                        android:id="@+id/editRW"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:ems="10"
+                        android:hint="RW"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_shape"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="Provinsi"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <Spinner
+                        android:id="@+id/spinProvinsi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:maxLength="5"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_shape"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="Kabupaten"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <Spinner
+                        android:id="@+id/spinKabupaten"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:maxLength="5"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_shape"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="Kecamatan"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <Spinner
+                        android:id="@+id/spinKecamatan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:maxLength="5"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_shape"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="Kelurahan"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <Spinner
+                        android:id="@+id/spinKelurahan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:maxLength="5"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_shape"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="Penugasan"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <Spinner
+                        android:id="@+id/spinPenugasan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:maxLength="5"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    tools:ignore="NestedWeights">
+
+                    <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                        android:id="@+id/editNoHp"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:ems="10"
+                        android:hint="No.Telp / HP"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:maxLength="13"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="horizontal">
+
+                 <android.support.design.widget.TextInputLayout
+                     android:layout_width="100dp"
+                     android:layout_height="wrap_content"
+                     tools:ignore="NestedWeights">
+
+                     <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                         android:id="@+id/editTPS"
+                         android:layout_width="match_parent"
+                         android:layout_height="48dp"
+                         android:layout_margin="5dp"
+                         android:ems="10"
+                         android:hint="TPS"
+                         android:imeOptions="actionNext"
+                         android:inputType="numberDecimal"
+                         android:maxLength="5"
+                         android:paddingLeft="16dp"
+                         android:paddingRight="16dp"
+                         android:textColor="@color/colorBlack"
+                         android:textColorHint="@color/colorBlack" />
+                 </android.support.design.widget.TextInputLayout>
+
+             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    tools:ignore="NestedWeights">
+
+                    <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                        android:id="@+id/editEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:ems="10"
+                        android:hint="Email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.fortuna.rgpmobile.view.CustomTextViewRoboto
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Nama Referensi"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    tools:ignore="NestedWeights">
+
+                    <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                        android:id="@+id/editNamaReferensi"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:ems="10"
+                        android:hint="Nama Pemberi Referensi"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    app:passwordToggleEnabled="true"
+                    tools:ignore="NestedWeights">
+
+                    <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                        android:id="@+id/editPasswordAwal"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:ems="10"
+                        android:hint="Password Awal"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    app:passwordToggleEnabled="true"
+                    tools:ignore="NestedWeights">
+
+                    <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                        android:id="@+id/editKonfirmPasswordAwal"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:ems="10"
+                        android:hint="Konfirmasi Password Awal"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    tools:ignore="NestedWeights">
+
+                    <com.fortuna.rgpmobile.view.CustomEditTextRoboto
+                        android:id="@+id/editKeterangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:ems="10"
+                        android:hint="Keterangan"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="InefficientWeight">
+
+                <ImageView
+                    android:id="@+id/imageFotoKTP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_foto_ktp"
+                    tools:ignore="ContentDescription" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <com.fortuna.rgpmobile.button.ButtonPlus
+                    android:id="@+id/btnFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_round_rect"
+                    android:text="Foto KTP"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <com.fortuna.rgpmobile.button.ButtonPlus
+                    android:id="@+id/btnEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_round_rect"
+                    android:text="Edit Relawan"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.fortuna.rgpmobile.button.ButtonPlus
+                    android:id="@+id/btnSimpan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_round_rect"
+                    android:text="Simpan"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

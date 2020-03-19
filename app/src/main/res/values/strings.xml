@@ -1,0 +1,175 @@
+<resources>
+
+    <string name="app_name">Relawan Ganti Presiden</string>
+
+    <string name="home_title">Relawan Ganti Presiden</string>
+    <string name="daftar_koordinator_title">Daftar Relawan</string>
+    <string name="lapor_title">Laporan ke Upline</string>
+    <string name="broadcast_title">Broadcast ke Downline</string>
+    <string name="input_tps_title">Input Hasil Form C1</string>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="berita_title">Berita</string>
+    <string name="hitung_suara_title">Hitung Suara</string>
+    <string name="pesan_masuk_title">Pesan Masuk</string>
+    <string name="action_settings">Settings</string>
+    <string name="pesan_masuk_broadcast_title">Broadcast Inbox</string>
+    <string name="pesan_masuk_laporan_title">Laporan Inbox</string>
+    <string name="detail_inbox_laporan_title">Detail Pesan</string>
+    <string name="login_title">RELAWAN GANTI PRESIDEN</string>
+
+    <string name="login_title_page">RELAWAN GANTI PRESIDEN</string>
+    <string name="no_hp">NO HP</string>
+    <string name="user_id">USER ID</string>
+    <string name="hint_passsword">Password</string>
+    <string name="forgot_pass">Lupa Password ?</string>
+    <string name="masuk_login">Masuk</string>
+    <string name="login_cr">© Copyright 2018 Relawan Ganti Presiden Team. All rights reserved.</string>
+    <string name="build_date">Build 2018100301</string>
+
+    <string name="cp_right">© Copyright 2018 Relawan Ganti Presiden. All rights reserved.</string>
+    <string name="font_name">fonts/RobotoRegular.ttf</string>
+
+    <string name="prompt_judul_laporan">Judul Laporan</string>
+    <string name="jenis_kejadian">Jenis Kejadian</string>
+    <string name="desc_kejadian">Deskripsi Kejadian</string>
+    <string name="prompt_judul_broadcast">Judul Pesan</string>
+    <string name="desc_isi_pesan">Isi Pesan</string>
+    <string name="jenis_broadcast">Jenis Broadcast</string>
+    <string name="radio_button_bc_1">Level dan Upline Sama</string>
+    <string name="radio_button_bc_2">Downline Langsung</string>
+    <string name="radio_button_bc_3">Seluruh Downline</string>
+    <string name="btn_kirim">Kirim</string>
+
+    <string name="laporkan">Laporkan</string>
+    <string name="radio_button_lapor_1">Pelanggaran Penyelenggara</string>
+    <string name="radio_button_lapor_2">Kecurangan Lawan</string>
+    <string name="radio_button_lapor_3">Kendala Teknis RGP</string>
+    <string name="radio_button_lapor_4">Kendala Non-Teknis RGP</string>
+    <string name="radio_button_lapor_5">Lain-Lain</string>
+
+    <string name="list_laporan_inbox_char">A</string>
+
+    <string-array name="penugasan">
+        <item>- Penugasan -</item>
+        <item>1 </item>
+        <item>2 </item>
+        <item>3 </item>
+        <item>4 </item>
+        <item>5 </item>
+    </string-array>
+
+
+    <string name="suara_prasan">JUMLAH SUARA SATU</string>
+    <string name="total_suara">TOTAL PEMILIH</string>
+    <string name="titik_dua">:</string>
+    <string name="nol">0</string>
+    <string name="generate_suara_lawan">JUMLAH SUARA DUA</string>
+    <string name="btn_generate">Tampilkan</string>
+    <string name="min">-</string>
+    <string name="plus">+</string>
+    <string name="suara_tidak_sah">JUMLAH SUARA TIDAK SAH</string>
+    <string name="btn_kirim_hasil">KIRIM HASIL</string>
+
+    <string name="versi_baru_tersedia">Versi Baru Tersedia</string>
+    <string name="old_version">Anda menggunakan Aplikasi MEDIA KOMUNIKASI versi lama, silahkan update aplikasi Anda !</string>
+    <string name="tentang_kita_playstore">com.fortuna.rgpmobile</string>
+    <string name="image_example">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</string>
+
+    <string name="title_activity_dsl">Daftar Survey Lapangan</string>
+
+    <string-array name="JenisKelamin">
+        <item>- Jenis Kelamin -</item>
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="Usia">
+        <item>- Usia -</item>
+        <item>Kurang 17 tahun</item>
+        <item>17 - 25 tahun</item>
+        <item>26 - 35 tahun</item>
+        <item>36 - 45 tahun</item>
+        <item>46 - 55 tahun</item>
+        <item>56 - 65 tahun</item>
+        <item>Diatas 65 tahun</item>
+    </string-array>
+
+    <string-array name="Agama">
+        <item>- Agama -</item>
+        <item>Islam</item>
+        <item>Katolik</item>
+        <item>Protestan</item>
+        <item>Budha</item>
+        <item>Hindu</item>
+        <item>Khonghucu</item>
+    </string-array>
+
+    <string-array name="Suku">
+        <item>- Suku -</item>
+        <item>Jawa</item>
+        <item>Sunda</item>
+        <item>Betawi</item>
+        <item>Minang</item>
+        <item>Bugis</item>
+        <item>Batak</item>
+        <item>Lainnya...</item>
+    </string-array>
+
+    <string-array name="Pendidikan">
+        <item>- Pendidikan Formal -</item>
+        <item>Tidak/Blm Pernah Sekolah</item>
+        <item>Tidak/Belum Tamat SD</item>
+        <item>SD Sederajat</item>
+        <item>SLTP Sederajat</item>
+        <item>SLTA Sederajat</item>
+        <item>Diploma/Akademik</item>
+        <item>Sarjana</item>
+        <item>Pasca Sarjana</item>
+    </string-array>
+
+    <string-array name="Pekerjaan">
+        <item>- Pekerjaan -</item>
+        <item>PNS</item>
+        <item>Guru / Dosen</item>
+        <item>Karyawan Swasta</item>
+        <item>Wiraswasta</item>
+        <item>Petani</item>
+        <item>Profesional*</item>
+        <item>Nelayan</item>
+        <item>Ibu Rumah Tangga</item>
+        <item>Pelajar / Mahasiswa</item>
+        <item>Seniman</item>
+        <item>Pensiunan</item>
+        <item>Buruh</item>
+        <item>Pengangguran</item>
+        <item>Pekerja Informal (Ojek,Supir,dll)</item>
+    </string-array>
+
+    <string-array name="PengeluaranBln">
+        <item>- Pengeluaran Konsumsi Rutin -</item>
+        <item>Dibawah 500.000</item>
+        <item>  501.000 - 1.000.000</item>
+        <item>1.000.001 - 2.000.000</item>
+        <item>2.000.001 - 3.500.000</item>
+        <item>3.500.001 - 5.000.000</item>
+        <item>Diatas 5.000.000</item>
+    </string-array>
+
+    <string-array name="ParpolPilihan2014">
+        <item>- Parpol Pilihan 2014 -</item>
+        <item>Nasdem</item>
+        <item>PKB</item>
+        <item>PKS</item>
+        <item>PDI Perjuangan</item>
+        <item>Golkar</item>
+        <item>Gerindra</item>
+        <item>Demokrat</item>
+        <item>PAN</item>
+        <item>PPP</item>
+        <item>Hanura</item>
+        <item>PBB</item>
+        <item>PKPI</item>
+    </string-array>
+
+    <string name="msg_scan_pelanggan">Isi data di atas terlebih dahulu</string>
+</resources>
